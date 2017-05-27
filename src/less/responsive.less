@@ -1,0 +1,110 @@
+//Media queries for responsiveness
+@media screen and (max-width: 768px) {
+    nav {
+        ul {
+            a {
+                color: @backgroundColor;
+            }
+        }
+    }
+    .left-navigation {
+        width: 100% !important;
+    }
+    .navbar-nav {
+        margin: 0px;
+    }
+    ul {
+        background-color: @textColor;
+        display: block;
+        height: 0;
+        list-style-type: none;
+        opacity: 0;
+        text-align: center;
+        transition: all 1s ease;
+        width: 100%;
+        visibility: hidden;
+    }
+
+    li {
+        border-bottom: 2px solid @backgroundColor;
+        color: @backgroundColor;
+        display: block;
+        font-size: 1.5rem;
+        padding: 2em 0;
+    }
+
+    #menu-toggle:checked ~ ul {
+        opacity: 1;
+        height: 100%;
+        visibility: visible;
+    }
+
+    .label-toggle {
+        background: linear-gradient(to bottom, @textColor 0%, @textColor 20%, transparent 20%, transparent 40%, @textColor 40%, @textColor 60%, transparent 60%, transparent 80%, @textColor 80%, @textColor 100%); //Gradient Hamburger
+        cursor: pointer;
+        display: block;
+        float: right;
+        height: 35px;
+        margin-top: 1em;
+        width: 35px;
+    }
+
+    .wrapper {display: block;}
+}
+
+@media screen and (max-width: 768px) {
+    .flip-container:hover .flipper,
+    .flip-container.hover .flipper {
+        -webkit-transform: none;
+        transform: none;
+    }
+    .navBar .logo {
+        width: 20%;
+        display: inline-block;
+    }
+
+    .content-wrapper {
+        .common-segment-slider {
+            display: block;
+            .main-slider-wrapper {
+                width: 100%;
+            }
+            .feature-wrapper {
+                width: 100%;
+            }
+        }
+        .flip-container:hover {
+            transform: none;
+        }
+    }
+
+    #featuredProducts {
+        .products-row {
+            display: block;
+        }
+    }
+    #brandSection {
+        display: block !important;
+        .brand-image-container {
+            width: 25% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #brandSection {
+        .brand-image-container {
+            width: 50% !important;
+        }
+    }
+    footer {
+        .terms-row ul {
+            display: block !important;
+        }
+    }
+    footer {
+        .footer-row-2, .navbar-nav {
+            display: block;
+        }
+    }
+}

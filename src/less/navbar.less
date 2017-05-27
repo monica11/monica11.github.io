@@ -1,0 +1,79 @@
+
+//Color Variables
+@textColor: #000; //Black
+@backgroundColor: #FFF; //White
+@blueColor : #1f4ba5;
+@hoverColor : #ebeee;
+
+.navBar {
+    background-color: @backgroundColor;
+    min-width: 100%;
+    .logo {
+        font-family: PT Serif;
+        font-weight: bold;
+        font-size: 26px;
+        font-style: italic;
+        color: @blueColor;
+        padding: 25px 10px;
+    }
+}
+
+// Content Wrapper
+.wrapper {
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+// Full Navigation, including mobile menu
+nav {
+    ul {
+        display: flex;
+        //justify-content: space-between;
+        list-style-type: none;
+        li {
+            padding: 0px;
+            &:hover {color: @hoverColor;}
+            a {
+                color: @textColor;
+                text-decoration: none;
+                transition: all .5s ease;
+            }
+        }
+
+        .mybag-count{
+            border: 2px solid @blueColor;
+            background-color: @blueColor;
+            border-radius: 50%;
+            color: white;
+            display: inline-block;
+            font-size: 1.2rem;
+            height: 17px;
+            right: 0px;
+            line-height: 15px;
+            text-align: center;
+            top: 0;
+            width: 17px;
+            position: absolute;
+        }
+
+    }
+
+    li  {
+        display: inline-block;
+        padding: 0px 10px;
+    }
+
+    .left-navigation{
+        width: 70%;
+    }
+
+    #menu-toggle {display: none;}
+
+    .label-toggle {display: none;}
+
+    .wrapper {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+}
