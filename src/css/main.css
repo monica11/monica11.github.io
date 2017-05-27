@@ -343,12 +343,12 @@ nav .wrapper {
     font-size: 1.5rem;
     padding: 2em 0;
   }
-  #menu-toggle:checked ~ ul {
+  .navBar #menu-toggle:checked ~ ul {
     opacity: 1;
     height: 100%;
     visibility: visible;
   }
-  .label-toggle {
+  .navBar .label-toggle {
     background: linear-gradient(to bottom, #000 0%, #000 20%, transparent 20%, transparent 40%, #000 40%, #000 60%, transparent 60%, transparent 80%, #000 80%, #000 100%);
     cursor: pointer;
     display: block;
@@ -357,7 +357,7 @@ nav .wrapper {
     margin-top: 1em;
     width: 35px;
   }
-  .wrapper {
+  .navBar .wrapper {
     display: block;
   }
 }
