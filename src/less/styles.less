@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
 
-// Base Styles
 body {
     background-color: @backgroundColor;
     color: @textColor;
@@ -9,6 +8,7 @@ body {
     line-height: 2em;
 }
 
+//Common classes to be used in html
 .fullWidthElement{
     display: inline-block;
     width: 100%;
@@ -21,6 +21,8 @@ body {
 .removeMargin{
     margin: 0px;
 }
+
+//Inner content CSS
 .content-wrapper{
     overflow-x: hidden;
     min-height: 100vh;
@@ -89,12 +91,6 @@ body {
             width: 30%;
             display: inline-block;
             float: right;
-            //.homepage-shopby{
-            //    margin-bottom: 10px;
-            //    &:last-child{
-            //        margin-bottom: 0px;
-            //    }
-            //}
         }
 
         .flip-container {
